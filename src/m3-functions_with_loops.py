@@ -64,7 +64,7 @@ ingredient_search("butter", list)
 ###############################################################################
 
 def triangle(size):
-    size = ["*" * 10]
+    size = ["*" * size]
     for x in range(11):
         print("*" * x)
-triangle(11)
+triangle(10)
