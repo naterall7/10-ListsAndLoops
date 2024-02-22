@@ -17,16 +17,14 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+list = ["sugar", "flour", "salt", "eggs"]
 def ingredient_search(ingredient, list):
-    list = ["sugar", "flour", "salt", "eggs"]
     for x in list:
-        if ingredient in list:
-            print(True)
-        else:
-            print(False)
-ingredient_search("eggs", list)
-ingredient_search("butter", list)
+        if x == ingredient:
+            return True
+    return False
+print(ingredient_search("eggs", list))
+print(ingredient_search("butter", list))
 
 ###############################################################################
 # DONE: 1. (3 pts)
@@ -64,7 +62,6 @@ ingredient_search("butter", list)
 ###############################################################################
 
 def triangle(size):
-    size = ["*" * size]
-    for x in range(11):
+    for x in range(size + 1):
         print("*" * x)
 triangle(10)
